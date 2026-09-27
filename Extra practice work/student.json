@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul",
+    "course": "Java",
+    "marks": 85
+  },
+  {
+    "id": 2,
+    "name": "Hasti",
+    "course": "Web Development",
+    "marks": 92
+  },
+  {
+    "id": 3,
+    "name": "Amit",
+    "course": "Python",
+    "marks": 76
+  },
+  {
+    "id": 4,
+    "name": "Neha",
+    "course": "Java",
+    "marks": 65
+  }
+]

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Textbox Validation</title>
+</head>
+<body>
+
+    <input type="text" id="nameBox" placeholder="Enter your name">
+    <button onclick="checkInput()">Submit</button>
+
+    <p id="error" style="color: red;"></p>
+
+    <script>
+        function checkInput() {
+            let name = document.getElementById("nameBox").value;
+
+            if (name.trim() === "") {
+                document.getElementById("error").innerHTML = "Error: Please enter your name.";
+            } else {
+                document.getElementById("error").innerHTML = "Hello " + name;
+            }
+        }
+    </script>
+
+</body>
+</html>

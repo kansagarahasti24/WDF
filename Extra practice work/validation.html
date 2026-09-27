@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Form Validation</h2>
+    <input type="text" id="txtname" placeholder="Enter your name"><span id="s"></span><br>
+    <input type="text" id="txtphone" placeholder="Enter 10 digit Number"><span id="s1"></span><br>
+    <input type="button" id="btn" value="Click me"><br>
+    <script>
+        var txtname=document.getElementById('txtname');
+        var txtphone=document.getElementById('txtphone');
+        var btn=document.getElementById('btn');
+
+        var str=/^[A-Za-z]+$/;
+        var num=/^[0-9]{10}$/;
+        var alphnum=/^[A-Za-z0-9]+$/;
+        btn.addEventListener('click',function(){
+            if(!str.test(txtname.value)){
+               document.getElementById('txtname').style.borderColor='red';
+               document.getElementById('s').innerHTML="*Invalid input";
+               txtname.focus();
+               return false;
+            }
+            else{
+                document.getElementById('txtname').style.borderColor='green';
+                document.getElementById('s').innerHTML="";
+
+            }
+            if(!num.test(txtphone.value)){
+                document.getElementById('txtphone').style.borderColor='red';
+                document.getElementById('s1').innerHTML="*Invalid input";
+                txtphone.focus();
+                return false;
+            }
+            else{
+                document.getElementById('txtphone').style.borderColor='green';
+                document.getElementById('s1').innerHTML="";
+            }
+        })
+
+
+    </script>
+</body>
+</html>
