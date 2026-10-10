@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub Login</title>
+</head>
+
+<body>
+
+<center>
+
+    <header>
+        <h1>STUDENTHUB PORTAL</h1>
+    </header>
+
+    <nav>
+        <a href="index.php">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <form action="login.php" method="post" onsubmit="return validateForm()">
+
+        <table align="center" width="800" cellpadding="10">
+
+            <tr>
+                <td colspan="2" align="left">
+                    <h3>Welcome Back!!</h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <div id="msg" style="font-size: 14px; color: rgb(195, 100, 100);"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Login As :</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label style="display: inline-flex; align-items: center; gap: 6px; margin-right: 20px; cursor: pointer;">
+                        <input type="radio" name="role" value="student" checked style="width: 16px; height: 16px; margin: 0;">
+                        <span>Student</span>
+                    </label>
+
+                    <label style="display: inline-flex; align-items: center; gap: 6px; margin-right: 20px; cursor: pointer;">
+                        <input type="radio" name="role" value="teacher" style="width: 16px; height: 16px; margin: 0;">
+                        <span>Teacher</span>
+                    </label>
+
+                    <label style="display: inline-flex; align-items: center; gap: 6px; cursor: pointer;">
+                        <input type="radio" name="role" value="admin" style="width: 16px; height: 16px; margin: 0;">
+                        <span>Admin</span>
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter Email :</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="email"
+                           id="id"
+                           name="id"
+                           size="50"
+                           placeholder="Enter Your Email"
+                           required>
+                    <br>
+                    <span id="s" style="font-size: 12px; color: rgb(195, 100, 100);"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter Password :</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="password"
+                           id="password"
+                           name="password"
+                           size="50"
+                           placeholder="Enter Your Password"
+                           required>
+                    <br>
+                    <span id="s1" style="font-size: 12px; color: rgb(195, 100, 100);"></span>
+                    <br>
+
+                    <label for="showPassword"
+                           style="display: inline-flex; align-items: center; gap: 10px; font-size: 13px; margin-left: 0; line-height: 1.2;">
+                        <input type="checkbox"
+                               id="showPassword"
+                               style="width: 16px; height: 18px; margin: 0;">
+                        <span>Show Password</span>
+                    </label>
+
+                    <br><br>
+
+                    <label for="remember"
+                           style="display: inline-flex; align-items: center; gap: 10px; font-size: 13px;">
+                        <input type="checkbox"
+                               id="remember"
+                               name="remember"
+                               value="1"
+                               style="width: 16px; height: 18px; margin: 0;">
+                        <span>Remember me for 30 days</span>
+                    </label>
+                </td>
+            </tr>
+
+        </table>
+
+        <br><br>
+
+        <button type="submit" id="btn">Log-In</button>
+
+    </form>
+
+</center>
+
+<script src="login.js"></script>
+
+</body>
+
+</html>
