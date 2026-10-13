@@ -1,0 +1,74 @@
+<?php require 'config.php'; ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Student Hub</title>
+    </head>
+    <body>
+        <center>
+        <header>
+            <img src="image.jpg" alt="Profile picture" width="150" height="150">
+            <h1>STUDENTHUB PORTAL</h1>
+        </header>
+
+        <?php include 'nav.php'; ?>
+
+        <section class="hero">
+            <h2>Welcome to StudentHub</h2>
+
+            <p>
+                StudentHub is your one-stop portal for managing
+                attendance, assignments, courses and semester
+                results.
+            </p>
+            <p></p>
+        </section>
+
+        </center>
+
+        <div class="faq-hamburger">
+            <button class="faq-toggle" type="button" aria-label="Toggle FAQs" aria-expanded="false" aria-controls="faq-panel">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div id="faq-panel" class="faq-panel" aria-hidden="true">
+                <h3>FAQs</h3>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        How can I log in?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Go to the Login page and enter your registered email and password to access your dashboard.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        Can I register as a new student?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Use the Register page to create your student account and begin managing your profile.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        Where do I view my results?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Visit the Results page from the main navigation menu to check your academic performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
